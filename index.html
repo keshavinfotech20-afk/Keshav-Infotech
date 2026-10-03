@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keshav Infotech | IT Hardware, Software &amp; Technology Solutions – Mumbai</title>
+  <meta name="description" content="Keshav Infotech is your trusted B2B IT hardware, software and services partner in Fort, Mumbai. Sourcing genuine technology products from leading global brands in India.">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ================= TOP UTILITY BAR ================= -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Fort, Mumbai – 400001 (Mapla House, Modi St)</span>
+      </div>
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Ashok Chaudhari: <a href="tel:9820804507">9820804507</a></span>
+        </div>
+        <div class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <a href="mailto:keshavinfotech20@gmail.com">keshavinfotech20@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN NAVBAR ================= -->
+  <header class="main-navbar">
+    <div class="container navbar-inner">
+      <!-- Brand Logo -->
+      <div class="brand-logo-container" onclick="navigateTo('home')">
+        <svg width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4" y="4" width="40" height="40" rx="10" fill="#0F172A" />
+          <path d="M14 14L24 8L34 14V26L24 32L14 26V14Z" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" />
+          <path d="M24 8V32" stroke="#1D4ED8" stroke-width="2" stroke-dasharray="2 2" />
+          <path d="M14 14L34 26" stroke="#38BDF8" stroke-width="1.5" opacity="0.6" />
+          <circle cx="24" cy="20" r="4" fill="#38BDF8" />
+          <circle cx="14" cy="14" r="2.5" fill="#1D4ED8" />
+          <circle cx="34" cy="14" r="2.5" fill="#1D4ED8" />
+          <circle cx="24" cy="32" r="2.5" fill="#38BDF8" />
+          <path d="M16 38H32" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+        </svg>
+        <div style="display: flex; flexDirection: column; line-height: 1.1;">
+          <span style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; color: #0F172A; text-transform: uppercase;">
+            KESHAV <span style="color: #0284C7;">INFOTECH</span>
+          </span>
+          <span style="font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; color: #64748B; text-transform: uppercase; margin-top: 2px;">
+            IT Hardware, Software &amp; Services
+          </span>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="/" class="nav-link active" data-route="home" onclick="event.preventDefault(); navigateTo('home')">Home</a></li>
+        <li><a href="/products" class="nav-link" data-route="products" onclick="event.preventDefault(); navigateTo('products')">Products</a></li>
+        <li><a href="/#brands" class="nav-link" data-route="brands" onclick="event.preventDefault(); navigateTo('brands')">Brands</a></li>
+        <li><a href="/#about" class="nav-link" data-route="about" onclick="event.preventDefault(); navigateTo('about')">About Us</a></li>
+        <li><a href="/#contact" class="nav-link" data-route="contact" onclick="event.preventDefault(); navigateTo('contact')">Contact</a></li>
+      </ul>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-cta">
+        <button class="btn btn-primary" onclick="openQuoteModal()">
+          Request a Quote 
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer" id="mobile-menu-drawer">
+      <a href="/" class="mobile-nav-link active" data-route="home" onclick="event.preventDefault(); navigateTo('home')">Home</a>
+      <a href="/products" class="mobile-nav-link" data-route="products" onclick="event.preventDefault(); navigateTo('products')">Products</a>
+      <a href="/#brands" class="mobile-nav-link" data-route="brands" onclick="event.preventDefault(); navigateTo('brands')">Brands</a>
+      <a href="/#about" class="mobile-nav-link" data-route="about" onclick="event.preventDefault(); navigateTo('about')">About Us</a>
+      <a href="/#contact" class="mobile-nav-link" data-route="contact" onclick="event.preventDefault(); navigateTo('contact')">Contact</a>
+      
+      <div style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+        <button class="btn btn-primary" style="width: 100%;" onclick="openQuoteModal()">Request a Quote</button>
+        <a href="https://wa.me/919820804507?text=Hello%20Keshav%20Infotech%20team%2C%20I%20would%20like%20to%20enquire%20about%20IT%20products%2Fsolutions%20for%20our%20company." target="_blank" rel="noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          WhatsApp Enquiry
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main style="flex-grow: 1;">
+
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section view-section" id="sec-hero">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-tag">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+              <span>Based in Fort, Mumbai • B2B Technology Supplier</span>
+            </div>
+            <h1 class="hero-title">Your Trusted IT Partner for Hardware, Software &amp; Technology Solutions</h1>
+            <p class="hero-subtitle">Reliable IT Products. Trusted Brands. Professional Service.</p>
+            <p class="hero-desc">Keshav Infotech helps businesses source reliable IT hardware, software and technology solutions from leading brands available in India — backed by experience, responsive service and dependable support.</p>
+            
+            <div class="hero-actions">
+              <button class="btn btn-primary btn-lg" onclick="openQuoteModal()">
+                Request a Quote 
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </button>
+              <button class="btn btn-outline-white btn-lg" onclick="navigateTo('products')">Explore Products</button>
+            </div>
+          </div>
+
+          <!-- Right Column: Hero Graphic Card -->
+          <div>
+            <div class="hero-visual-card">
+              <div class="hero-img-frame">
+                <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Enterprise Network &amp; IT Infrastructure Setup">
+              </div>
+              <div class="hero-visual-badge">
+                <div class="hero-badge-item">
+                  <div class="hero-badge-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                  </div>
+                  <div class="hero-badge-text">
+                    <p>Enterprise IT Portfolio</p>
+                    <p>Networking, Storage, Peripherals &amp; CCTV</p>
+                  </div>
+                </div>
+                <div style="text-align: right;">
+                  <span style="font-size: 0.75rem; color: #38BDF8; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Fort, Mumbai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. WHY BUSINESSES CHOOSE KESHAV INFOTECH -->
+    <section class="why-us-section view-section" id="sec-why-us">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">The B2B Advantage</span>
+          <h2 class="section-title">Why Businesses Choose Keshav Infotech</h2>
+          <p class="section-desc" style="color: #94A3B8;">Built around trust, service excellence, authentic sourcing, and long-term commercial relationships.</p>
+        </div>
+        <div class="why-us-grid" id="why-us-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3. FEATURED BRANDS SHOWCASE (Animated Sliding Bar) -->
+    <section class="brands-section view-section" id="sec-brands">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Brand Portfolio</span>
+          <h2 class="section-title">Leading Brands Across Our IT Product Portfolio</h2>
+          <p class="section-desc">We provide corporate access to IT hardware, software and services from renowned technology manufacturers available in India.</p>
+        </div>
+      </div>
+
+      <!-- Animated Sliding Bar Showcase -->
+      <div class="brands-slider-wrapper">
+        <div class="brands-slider-status">
+          <span class="pulse-indicator"></span>
+          <span>Hover over any brand to pause • Click to browse catalog products</span>
+        </div>
+
+        <div class="brands-slider-container">
+          <!-- Row 1: Sliding Left -->
+          <div class="brands-slider-row row-left" id="brands-slider-row-1"></div>
+          <!-- Row 2: Sliding Right -->
+          <div class="brands-slider-row row-right" id="brands-slider-row-2"></div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div style="margin-top: 2.75rem; text-align: center;">
+          <div class="brands-warranty-strip">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+            <span>100% Genuine Products • Standard Brand Manufacturer Warranty Applies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PRODUCT CATALOGUE & PROCUREMENT PORTAL (Located at /products) -->
+    <section class="catalogue-wrapper view-section view-hidden" id="sec-products">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 2.5rem;">
+          <span class="section-subtitle">Corporate IT Procurement Portal</span>
+          <h1 class="section-title">Product Portfolio &amp; Catalogue</h1>
+          <p class="section-desc">Explore genuine enterprise hardware, peripherals, networking, storage, power, printing, and CCTV equipment. Request custom corporate quotations for single or bulk company purchases.</p>
+        </div>
+
+        <!-- Toolbar: Search & Brand Selector -->
+        <div class="catalogue-toolbar">
+          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+            <div class="search-box" style="margin: 0;">
+              <span class="search-icon-svg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              </span>
+              <input type="text" id="catalogue-search-input" placeholder="Search products by model, brand, or specification (e.g. Logitech, TP-Link, CAT6, NVMe, UPS)...">
+            </div>
+            <div style="position: relative;">
+              <select id="brand-select-filter" style="width: 100%; height: 100%; padding: 0.9rem 1rem; border-radius: 10px; border: 1px solid #E2E8F0; background-color: #F8FAFC; font-size: 0.95rem; font-weight: 500; color: #0F172A; cursor: pointer;">
+                <option value="all">Filter by Brand (All Brands)</option>
+              </select>
+            </div>
+          </div>
+          <!-- Filter Pills -->
+          <div class="filter-pills" id="category-filter-pills"></div>
+        </div>
+
+        <!-- Results Counter Bar -->
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.75rem; padding: 0 0.5rem;">
+          <span id="catalogue-results-count" style="font-size: 0.95rem; color: #64748B; font-weight: 600;"></span>
+          <div id="catalogue-reset-btn-container"></div>
+        </div>
+
+        <!-- Products Grid Container -->
+        <div class="catalogue-grid" id="catalogue-grid"></div>
+
+        <!-- Assistance Box -->
+        <div style="margin-top: 4rem; background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); border-radius: 16px; padding: 2.5rem; color: #FFFFFF; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+          <div>
+            <h3 style="color: #FFFFFF; font-size: 1.4rem; margin-bottom: 0.4rem;">Need help selecting the right product?</h3>
+            <p style="color: #94A3B8; font-size: 1rem; margin: 0;">Speak directly with our IT procurement specialists in Fort, Mumbai to match your technical requirements.</p>
+          </div>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="tel:9820804507" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call 9820804507
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT US SECTION -->
+    <section class="section-padding view-section" id="sec-about" style="background-color: var(--bg-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">About Keshav Infotech</span>
+          <h1 class="section-title">Technology Procurement Built Around Trust</h1>
+          <p class="section-desc">Your trusted B2B IT hardware, software and services partner based in Fort, Mumbai.</p>
+        </div>
+
+        <div style="background-color: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 2.5rem; margin-bottom: 3.5rem;">
+          <div style="max-width: 920px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.2rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 1.25rem;">
+              “Keshav Infotech is an IT Hardware, Software and Services vendor offering products from leading brands available in India.”
+            </p>
+            <p style="font-size: 1.05rem; color: var(--text-body); line-height: 1.8; margin-bottom: 0;">
+              “We come with a vast pool of experience in the IT and ITeS industry, having worked with renowned IT hardware, services and software corporations in India.”
+            </p>
+          </div>
+        </div>
+
+        <!-- Vision & Mission Cards -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+          <div style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: #FFFFFF; border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-lg);">
+            <div style="width: 54px; height: 54px; border-radius: 12px; background: rgba(56, 189, 248, 0.15); color: var(--sky-blue); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 800; color: var(--sky-blue); letter-spacing: 0.1em; text-transform: uppercase;">OUR VISION</span>
+            <h3 style="color: #FFFFFF; font-size: 1.4rem; margin-top: 0.5rem; margin-bottom: 1rem;">Corporate Excellence in IT Sourcing</h3>
+            <p style="color: #94A3B8; font-size: 1.05rem; line-height: 1.7; margin: 0;">“To be the best place for our clienteles to source their IT Solutions and services.”</p>
+          </div>
+
+          <div style="background: linear-gradient(135deg, #1E40AF 0%, #0284C7 100%); color: #FFFFFF; border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-lg);">
+            <div style="width: 54px; height: 54px; border-radius: 12px; background: rgba(255, 255, 255, 0.2); color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <span style="font-size: 0.8rem; font-weight: 800; color: #E0F2FE; letter-spacing: 0.1em; text-transform: uppercase;">OUR MISSION</span>
+            <h3 style="color: #FFFFFF; font-size: 1.4rem; margin-top: 0.5rem; margin-bottom: 1rem;">Service Excellence &amp; Genuine Quality</h3>
+            <p style="color: #E0F2FE; font-size: 1.05rem; line-height: 1.7; margin: 0;">“To ensure our clienteles get the best products with excellence and service.”</p>
+          </div>
+        </div>
+
+        <!-- Office Card -->
+        <div style="background-color: var(--bg-page); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 2.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 0.4rem; color: var(--brand-blue); font-weight: 700; font-size: 0.85rem; margin-bottom: 0.5rem;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Based in Fort, Mumbai
+            </div>
+            <h3 style="font-size: 1.3rem; color: var(--primary-navy); margin-bottom: 0.5rem;">Keshav Infotech Commercial Office</h3>
+            <p style="color: var(--text-body); font-size: 0.95rem; margin: 0;">91 Mapla House, Modi Street, Fort, Mumbai – 400001</p>
+            <div style="margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted);">Primary Key Contact: <strong>Ashok Chaudhari (9820804507)</strong></div>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-lg" onclick="openQuoteModal()">Request a B2B Quote</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. REQUEST A QUOTE CTA BANNER -->
+    <section class="view-section" id="sec-cta-banner" style="background-color: var(--primary-navy); padding: 5rem 0; color: #FFFFFF; text-align: center;">
+      <div class="container">
+        <span style="color: var(--sky-blue); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem; display: block;">
+          Streamlined Corporate Procurement
+        </span>
+        <h2 style="color: #FFFFFF; font-size: clamp(2rem, 3.5vw, 2.8rem); margin-bottom: 1rem;">
+          Ready to Source IT Products for Your Company?
+        </h2>
+        <p style="color: #94A3B8; font-size: 1.1rem; max-width: 680px; margin: 0 auto 2rem;">
+          Connect with our Fort, Mumbai commercial team for fast, transparent B2B quotations on leading hardware, networking, storage, and office technology.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-lg" onclick="openQuoteModal()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+            Request a B2B Quote
+          </button>
+          <a href="tel:9820804507" class="btn btn-outline-white btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call 9820804507
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT & MAP LOCATION SECTION -->
+    <section class="section-padding view-section" id="sec-contact" style="background-color: var(--bg-page);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Based in Fort, Mumbai</span>
+          <h1 class="section-title">Contact &amp; Request a B2B Quotation</h1>
+          <p class="section-desc">Connect with our IT specialists to submit company procurement requirements or arrange product pricing.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 3rem; align-items: start;">
+          <!-- Left Column -->
+          <div>
+            <div style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--shadow-sm);">
+              <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 1.25rem;">Keshav Infotech Office</h3>
+              <div class="footer-contact-item" style="color: var(--text-body); margin-bottom: 1.25rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                  <strong style="color: var(--primary-navy);">Office Address:</strong><br>
+                  91 Mapla House, Modi Street,<br>
+                  Fort, Mumbai – 400001
+                </div>
+              </div>
+
+              <div class="footer-contact-item" style="color: var(--text-body); margin-bottom: 1.25rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                  <strong style="color: var(--primary-navy);">Direct Key Contact:</strong><br>
+                  Ashok Chaudhari: <a href="tel:9820804507" style="font-weight: 600;">9820804507</a>
+                </div>
+              </div>
+
+              <div class="footer-contact-item" style="color: var(--text-body); margin-bottom: 1.5rem;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <div>
+                  <strong style="color: var(--primary-navy);">Email Enquiry:</strong><br>
+                  <a href="mailto:keshavinfotech20@gmail.com" style="font-weight: 600;">keshavinfotech20@gmail.com</a>
+                </div>
+              </div>
+
+              <a href="https://wa.me/919820804507?text=Hello%20Keshav%20Infotech%20team%2C%20I%20would%20like%20to%20enquire%20about%20IT%20products%2Fsolutions%20for%20our%20company." target="_blank" rel="noreferrer" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+
+            <!-- Google Map Iframe -->
+            <div style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border-subtle); height: 280px; box-shadow: var(--shadow-sm);">
+              <iframe title="Keshav Infotech Location Map - Fort Mumbai" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.91386128456!2d72.8335!3d18.9345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c5d6e2e001%3A0x8e8a6f443b35520!2sModi%20St%2C%20Fort%2C%20Mumbai%2C%20Maharashtra%20400001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <!-- Right Column: Form -->
+          <div style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 2.5rem; box-shadow: var(--shadow-md);">
+            <h3 style="font-size: 1.35rem; color: var(--primary-navy); margin-bottom: 0.5rem;">Request a B2B Quotation</h3>
+            <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1.75rem;">Please fill out your business requirement details. Our team will review your requirement and get back to you.</p>
+
+            <div id="contact-success" class="form-success-card" style="display: none;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 1rem;"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              <h4 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 0.5rem;">Enquiry Submitted Successfully!</h4>
+              <p style="color: var(--text-body); font-size: 0.95rem; max-width: 420px; margin: 0 auto 1.5rem;">
+                Thank you, <strong id="contact-success-name"></strong>. Our team will review your requirement and get back to you.
+              </p>
+              <button class="btn btn-secondary btn-sm" onclick="document.getElementById('contact-success').style.display='none'; document.getElementById('contact-form').style.display='block';">
+                Submit Another Requirement
+              </button>
+            </div>
+
+            <form id="contact-form">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="contact-name">Your Name *</label>
+                  <input type="text" id="contact-name" name="name" required placeholder="e.g. Rahul Sharma">
+                </div>
+                <div class="form-group">
+                  <label for="contact-company">Company / Organization Name *</label>
+                  <input type="text" id="contact-company" name="companyName" required placeholder="e.g. Apex Enterprises Pvt Ltd">
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Business Email *</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="rahul@company.com">
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone">Phone / Mobile Number *</label>
+                  <input type="tel" id="contact-phone" name="phone" required placeholder="98200XXXXX">
+                </div>
+                <div class="form-group">
+                  <label for="contact-form-category">Product Category</label>
+                  <select id="contact-form-category" name="category"></select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-quantity">Quantity Required</label>
+                  <input type="text" id="contact-quantity" name="quantity" placeholder="e.g. 5 units / 50 units">
+                </div>
+                <div class="form-group full-width">
+                  <label for="contact-requirement">Product Model / Requirement Title *</label>
+                  <input type="text" id="contact-requirement" name="requirement" required placeholder="e.g. Logitech Wireless Keyboard Combo MK270 &amp; TP-Link 24-Port Switch">
+                </div>
+                <div class="form-group full-width">
+                  <label for="contact-message">Additional Specifications / Office Delivery Notes</label>
+                  <textarea id="contact-message" name="message" rows="4" placeholder="Please specify any technical constraints, delivery location preferences, or invoice requirements..."></textarea>
+                </div>
+              </div>
+              <div style="margin-top: 1.75rem;">
+                <button class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;" type="submit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                  Submit B2B Enquiry
+                </button>
+              </div>
+              <div style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: var(--text-muted);">
+                Our team will review your requirement and get back to you.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FLOATING WHATSAPP CTA ================= -->
+  <a href="https://wa.me/919820804507?text=Hello%20Keshav%20Infotech%20team%2C%20I%20would%20like%20to%20enquire%20about%20IT%20products%2Fsolutions%20for%20our%20company." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat with Keshav Infotech team on WhatsApp" title="Need an IT product or quote? Chat with our team on WhatsApp.">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>Chat with our team on WhatsApp</span>
+  </a>
+
+  <!-- ================= GLOBAL FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div style="margin-bottom: 1.25rem;">
+            <div class="brand-logo-container" onclick="navigateTo('home')">
+              <svg width="42" height="42" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="4" width="40" height="40" rx="10" fill="#1E293B" />
+                <path d="M14 14L24 8L34 14V26L24 32L14 26V14Z" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round" />
+                <path d="M24 8V32" stroke="#1D4ED8" stroke-width="2" stroke-dasharray="2 2" />
+                <path d="M14 14L34 26" stroke="#38BDF8" stroke-width="1.5" opacity="0.6" />
+                <circle cx="24" cy="20" r="4" fill="#38BDF8" />
+                <circle cx="14" cy="14" r="2.5" fill="#1D4ED8" />
+                <circle cx="34" cy="14" r="2.5" fill="#1D4ED8" />
+                <circle cx="24" cy="32" r="2.5" fill="#38BDF8" />
+                <path d="M16 38H32" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+              </svg>
+              <div style="display: flex; flex-direction: column; line-height: 1.1;">
+                <span style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; letter-spacing: -0.02em; color: #FFFFFF; text-transform: uppercase;">
+                  KESHAV <span style="color: #0284C7;">INFOTECH</span>
+                </span>
+                <span style="font-size: 0.68rem; font-weight: 600; letter-spacing: 0.08em; color: #94A3B8; text-transform: uppercase; margin-top: 2px;">
+                  IT Hardware, Software &amp; Services
+                </span>
+              </div>
+            </div>
+          </div>
+          <p style="color: #94A3B8; font-size: 0.95rem; font-weight: 600; margin-bottom: 0.75rem;">“Your Trusted IT Partner in Fort, Mumbai”</p>
+          <p style="color: #64748B; font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.5rem; max-width: 380px;">Keshav Infotech is an IT Hardware, Software and Services vendor offering products from leading brands available in India.</p>
+          <a href="https://wa.me/919820804507?text=Hello%20Keshav%20Infotech%20team%2C%20I%20would%20like%20to%20enquire%20about%20IT%20products%2Fsolutions%20for%20our%20company." target="_blank" rel="noreferrer" class="btn btn-whatsapp btn-sm" style="display: inline-flex; gap: 0.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Chat With Us on WhatsApp
+          </a>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/" onclick="event.preventDefault(); navigateTo('home')">Home</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products')">Products Catalogue</a></li>
+            <li><a href="/#brands" onclick="event.preventDefault(); navigateTo('brands')">Brands Portfolio</a></li>
+            <li><a href="/#about" onclick="event.preventDefault(); navigateTo('about')">About Us</a></li>
+            <li><a href="/#contact" onclick="event.preventDefault(); navigateTo('contact')">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Product Scope -->
+        <div class="footer-col">
+          <h4>Product Scope</h4>
+          <ul class="footer-links">
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'peripherals')">Keyboards &amp; Mice</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'webcams-video')">Webcams &amp; Audio</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'networking')">Enterprise Networking</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'storage-memory')">Storage &amp; RAM Memory</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'power-ups')">APC UPS &amp; Power</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'printers-scanners')">Printers &amp; Scanners</a></li>
+            <li><a href="/products" onclick="event.preventDefault(); navigateTo('products', 'cctv-surveillance')">Hikvision CCTV</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Location -->
+        <div class="footer-col">
+          <h4>Fort, Mumbai Office</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>91 Mapla House, Modi Street,<br>Fort, Mumbai – 400001</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>Ashok Chaudhari: <a href="tel:9820804507" style="color: #FFFFFF; font-weight: 600;">9820804507</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <a href="mailto:keshavinfotech20@gmail.com" style="color: #FFFFFF; font-weight: 600;">keshavinfotech20@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Legal Strip -->
+      <div class="footer-bottom">
+        <div>© 2026 Keshav Infotech. All Rights Reserved. • Based in Fort, Mumbai</div>
+        <div style="display: flex; gap: 1.5rem;">
+          <button onclick="openLegalModal('privacy')" style="background: none; border: none; color: #94A3B8; cursor: pointer; font-size: 0.85rem;">Privacy Policy</button>
+          <button onclick="openLegalModal('terms')" style="background: none; border: none; color: #94A3B8; cursor: pointer; font-size: 0.85rem;">Terms &amp; Conditions</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= QUOTE MODAL ================= -->
+  <div class="modal-overlay" id="quote-modal">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <span class="badge badge-brand" style="margin-bottom: 0.35rem;">Corporate Procurement Enquiry</span>
+          <h3 style="font-size: 1.25rem; color: var(--primary-navy); margin: 0;">Request a B2B Quotation</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeQuoteModal()" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="quote-success" style="display: none; text-align: center; padding: 2.5rem 1rem;">
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="var(--brand-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin: 0 auto 1rem;"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <h4 style="font-size: 1.3rem; color: var(--primary-navy); margin-bottom: 0.5rem;">Quote Request Submitted Successfully</h4>
+          <p style="color: var(--text-body); font-size: 0.95rem; max-width: 420px; margin: 0 auto 1.5rem;">
+            Thank you, <strong id="quote-success-name"></strong>. Our team will review your requirement and get back to you.
+          </p>
+          <button class="btn btn-primary" onclick="closeQuoteModal()">Done</button>
+        </div>
+
+        <form id="quote-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="modal-quote-name">Your Name *</label>
+              <input type="text" id="modal-quote-name" name="name" required placeholder="e.g. Vikram Mehta">
+            </div>
+            <div class="form-group">
+              <label for="modal-quote-company">Company Name *</label>
+              <input type="text" id="modal-quote-company" name="companyName" required placeholder="e.g. Nexus Tech Systems">
+            </div>
+            <div class="form-group">
+              <label for="modal-quote-email">Business Email *</label>
+              <input type="email" id="modal-quote-email" name="email" required placeholder="vikram@nexustech.com">
+            </div>
+            <div class="form-group">
+              <label for="modal-quote-phone">Mobile / Direct Phone *</label>
+              <input type="tel" id="modal-quote-phone" name="phone" required placeholder="98208XXXXX">
+            </div>
+            <div class="form-group">
+              <label for="modal-quote-category">Product Category</label>
+              <select id="modal-quote-category" name="category"></select>
+            </div>
+            <div class="form-group">
+              <label for="modal-quote-quantity">Quantity Needed</label>
+              <input type="text" id="modal-quote-quantity" name="quantity" placeholder="e.g. 10 units">
+            </div>
+            <div class="form-group full-width">
+              <label for="modal-quote-requirement">Requirement Title / Product Models *</label>
+              <input type="text" id="modal-quote-requirement" name="requirement" required placeholder="e.g. Bulk Logitech C920 Webcams &amp; H390 Headsets for Mumbai office">
+            </div>
+            <div class="form-group full-width">
+              <label for="modal-quote-message">Specific Notes / Billing &amp; Delivery instructions</label>
+              <textarea id="modal-quote-message" name="message" rows="3" placeholder="Any technical requirements or preferred timeline..."></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <button class="btn btn-primary btn-lg" style="width: 100%; justify-content: center;" type="submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              Submit Enquiry
+            </button>
+          </div>
+          <div style="text-align: center; margin-top: 0.85rem; font-size: 0.8rem; color: var(--text-muted);">
+            Our team will review your requirement and get back to you.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PRODUCT DETAIL MODAL ================= -->
+  <div class="modal-overlay" id="product-modal">
+    <div class="modal-content" id="product-modal-content" onclick="event.stopPropagation()"></div>
+  </div>
+
+  <!-- ================= LEGAL MODAL ================= -->
+  <div class="modal-overlay" id="legal-modal">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <h3 id="legal-modal-title" style="font-size: 1.25rem; color: var(--primary-navy); margin: 0; display: flex; align-items: center; gap: 0.5rem;"></h3>
+        <button class="modal-close-btn" onclick="closeLegalModal()" aria-label="Close modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="legal-modal-body" style="font-size: 0.92rem; color: var(--text-body); line-height: 1.7;"></div>
+    </div>
+  </div>
+
+  <!-- ================= SCRIPT ================= -->
+  <script src="./script.js"></script>
+</body>
+</html>
